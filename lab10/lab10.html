@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10</title>
+</head>
+<body>
+    <script>
+        let goodAnswer = false;
+        do {
+            // Use prompt() to ask the user to enter the total restaurant bill amount. The prompt must clearly explain what the user should enter.
+            var subtotal = Number(prompt("Enter bill subtotal: ")).toFixed(2);
+            // Validate the input using if statements:
+            // If the input is blank or 0, update the prompt to ask the user to enter a valid bill amount greater than zero.
+            // If the input is negative, update the prompt to explain that negative amounts are not allowed and ask the user to enter a valid amount.
+            // If the input is not a number, update the prompt to explain that the input is invalid and ask the user to enter a valid number.
+            if (subtotal == 0) {
+                alert("Subtotal must not be blank or 0. Try again. ");
+            }
+            else if (subtotal < 0) {
+                alert("Subtotal must not be negative. Try again. ");
+            }
+            else if (isNaN(subtotal) == true) {
+                alert("Subtotal must not be a valid number. Try again. ");
+            }
+            else {
+                // alert("bill is good");
+                goodAnswer = true; // break out of loop
+            }
+        } while (goodAnswer == false);
+        // Use a do...while loop to keep prompting the user until a valid, positive bill amount is entered. The prompt message must change to explain the specific error and tell the user what to enter next.
+
+        // If the input is valid, calculate the tip as 10% of the bill.
+        let tipAmount = Number(subtotal * 0.1).toFixed(2); // calc tip amount rounded to 2 decimals
+        alert(`Tip amount: ${tipAmount}`); 
+        // Use console.log() to display the bill and tip with a clear message. For example:
+        // For a bill of $100.00, the tip should be $10.00.
+        console.log(`For a bill of $${subtotal}, the tip should be $${tipAmount}.`);
+        
+        // Use document.write() to display the same result on the webpage.
+        document.write(`For a bill of $${subtotal}, the tip should be $${tipAmount}.`);
+    </script>
+</body>
+</html>
