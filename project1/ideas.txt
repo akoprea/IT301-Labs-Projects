@@ -1,0 +1,11 @@
+WEB PROJECT PLANNING
+
+Cooking educational website for hobbiests. 
+
+pages:
+1) home page w/ nav
+2) measurement conversions
+3) safety: what temps to cook meat at, how to wash ingredients, etc
+4) where do what do cooking intructions mean? what is diced vs chopped? stove temperatures, etc. where do ingredients come from? where to buy ingredients? 
+5) recent recipes.
+
