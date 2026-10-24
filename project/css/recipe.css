@@ -1,0 +1,57 @@
+/* RECIPE */
+
+/* STYLE 1 */
+
+
+body {
+    background-color:#C8E6C9;
+}
+
+body * {
+    color:#212121; 
+}
+
+h1 { color:#FFA000; }
+h2, h3, h4 { color:#FFC107; }
+
+
+img {
+    max-width: 300px;
+    padding:0px;
+    border: 5px orange solid;
+    border-radius: 25px;
+    margin-left:15px; 
+}
+
+
+tr:nth-child(even) {background-color:rgb(212, 212, 198);} /* striped rows */
+th, td {
+    border-bottom: 1px solid #ddd; /* add seperator between rows */
+}
+
+li {
+    margin: 5px 0px;
+}
+
+
+/* FONTS */
+.lemonada-headers, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lemonada", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  /* color:#7C0E44; */
+}
+
+a { color:#376e39 }
+
+/* Hover effects */
+tr:hover, a:hover {background-color: #dbbe7f;}
+
+footer { 
+    position: fixed; 
+    background-color: rgb(68, 150, 136); 
+    margin-top:20px; /* extra space at bottom for footer */
+}
+footer a { color: darkorchid;  }
+

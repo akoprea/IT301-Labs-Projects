@@ -1,0 +1,63 @@
+/* GALLERY */
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin:0px;
+    height:100vh;
+    margin-left:25px;
+    background-color: rgb(172, 216, 218);
+    color:darkorchid; 
+}
+
+h1 { color:rgb(60, 0, 139) }
+
+nav a:hover { background-color:orchid; }
+
+#gallery {
+    overflow-y:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:safe;
+    gap: 2px;
+}
+
+img {
+    max-width: 350px; 
+    height:500px;
+    display: block;
+    flex: 1 1 50px;
+}
+
+.galbox {
+    padding:10px;
+    position: relative; 
+    display:flex;
+}
+.galbox:hover { background-color: thistle; }
+/* boxes with links have different bg color */
+/* .galbox:has(a):hover { background-color:rgb(240, 189, 169); }  */
+.galbox a { color: rgb(221, 145, 114); }
+.galbox > p {
+    padding:5px;
+    color:white;
+    background-color:rgb(114, 105, 172);
+    width:fit-content; 
+    position: absolute;
+    bottom:10px;
+    left:50%;
+    transform: translateX(-50%);
+    opacity: 0; /* hide parahraph by default */
+}
+.galbox:hover > p {
+    opacity: 100; /* only show text when galbox is hovered */
+}
+
+
+footer { 
+    /* position: static;  */
+    background-color: rgb(114, 105, 172); 
+    /* margin-top:20px; */
+}
+footer a { color: darkorchid;  }
+

@@ -1,0 +1,22 @@
+/* STYLE 1 */
+
+body {
+    background-color:beige;
+}
+
+body * {
+    color:#212121; 
+}
+
+h1 { color:#D32F2F; }
+h2 { color:#F44336; }
+
+tr:nth-child(even) {background-color:rgb(212, 212, 198);} /* striped rows */
+th, td {
+    border-bottom: 1px solid #ddd; /* add seperator between rows */
+}
+
+
+/* Hover effects */
+tr:hover, a:hover {background-color: #FF5722;}
+

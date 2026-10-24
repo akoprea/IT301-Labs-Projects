@@ -1,0 +1,69 @@
+/* BASE CSS */
+
+* {  
+    box-sizing:border-box; 
+    padding:0px;
+    margin:0px;
+}
+
+body * {
+    padding: 0px 5px; 
+    margin:0px 5px; 
+}
+
+section {
+    padding-bottom: 25px;
+}
+
+p {
+    padding:5px;
+    text-indent: 20px;
+    font-family: serif;
+    font-size: large;
+}
+
+table {
+    border: 2px solid; 
+    margin: 5px 20px;
+    padding: 0px;
+}
+td {
+    text-align: center;
+    width:360px;
+}
+
+ul > li { /* items in UNORDERED lists */
+    list-style-type:circle;
+}
+li {
+    list-style-position:inside;
+}
+
+nav > * {
+    padding: 0px 5px; 
+}
+
+.lemonada-headers, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lemonada", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+header {
+    padding-bottom: 25px;
+}
+
+footer {
+    background-color: thistle;
+    padding:2px;
+    width:100vw;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-decoration: underline 1px;
+    font-style: italic;
+    text-align: center;
+    margin-top:20px;
+}
+main { padding-bottom: 80px; } /* adds space below main for footer */
